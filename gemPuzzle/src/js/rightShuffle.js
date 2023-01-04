@@ -1,0 +1,83 @@
+
+export function rightShuffle(m) {
+  const startState = []
+  for (let i = 1; i <= m.length; i++) {
+    startState.push(i)
+  }
+  m.sort((a, b) => startState.indexOf(+(a.innerHTML)) - startState.indexOf(+(b.innerHTML)))
+  let randomNum = Math.floor(Math.random() * 100) + 2
+  for (let i = 0; i < randomNum; i++) {
+    let pocket = m[14]
+    m[14] = m[15]
+    m[15] = pocket
+    pocket = m[10]
+    m[10] = m[14]
+    m[14] = pocket
+    pocket = m[9]
+    m[9] = m[10]
+    m[10] = pocket
+    pocket = m[5]
+    m[5] = m[9]
+    m[9] = pocket
+    pocket = m[4]
+    m[4] = m[5]
+    m[5] = pocket
+    pocket = m[8]
+    m[8] = m[4]
+    m[4] = pocket
+    pocket = m[12]
+    m[12] = m[8]
+    m[8] = pocket
+    pocket = m[13]
+    m[13] = m[12]
+    m[12] = pocket
+    pocket = m[14]
+    m[14] = m[13]
+    m[13] = pocket
+    pocket = m[15]
+    m[15] = m[14]
+    m[14] = pocket
+    pocket = m[11]
+    m[11] = m[15]
+    m[15] = pocket
+    pocket = m[7]
+    m[7] = m[11]
+    m[11] = pocket
+    pocket = m[3]
+    m[3] = m[7]
+    m[7] = pocket
+    pocket = m[2]
+    m[2] = m[3]
+    m[3] = pocket
+    pocket = m[6]
+    m[6] = m[2]
+    m[2] = pocket
+    pocket = m[5]
+    m[5] = m[6]
+    m[6] = pocket
+    pocket = m[1]
+    m[1] = m[5]
+    m[5] = pocket
+    pocket = m[0]
+    m[0] = m[1]
+    m[1] = pocket
+    pocket = m[4]
+    m[4] = m[0]
+    m[0] = pocket
+    pocket = m[8]
+    m[8] = m[4]
+    m[4] = pocket
+    pocket = m[12]
+    m[12] = m[8]
+    m[8] = pocket
+    pocket = m[13]
+    m[13] = m[12]
+    m[12] = pocket
+    pocket = m[14]
+    m[14] = m[13]
+    m[13] = pocket
+    pocket = m[15]
+    m[15] = m[14]
+    m[14] = pocket
+  }
+}
